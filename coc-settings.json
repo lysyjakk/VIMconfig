@@ -1,0 +1,27 @@
+{
+    "languageserver": {
+        "ccls": {
+            "command": "ccls",
+            "filetypes": [
+                "c",
+		"cc",
+		"c++",
+                "cpp",
+                "objc",
+                "objcpp"
+            ],
+            //"rootPatterns": [
+            //    ".ccls",
+            //    ".git/",
+            //],
+            "initializationOptions": {
+                "cache": {
+                    "directory": "/tmp/ccls"
+                },
+		"clang": {
+                    "extraArgs": [ "-std=c++17" ]
+                }
+            }
+        }
+    }
+}
